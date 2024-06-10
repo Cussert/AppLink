@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Download Green Spoon App</title>
+  </head>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKQF9WC29K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-YKQF9WC29K');
+  </script>
+  
+  <style>
+  body {
+    font-family: Helvetica, sans-serif;
+  }
+  </style>
+  <body>
+    <h1>Redirecting to store for downloading Green Spoon app...</h1>
+    <script>
+      function getOS() {
+        var userAgent = window.navigator.userAgent,
+            platform = window.navigator.platform,
+            macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+            windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+            iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+
+        if (iosPlatforms.includes(platform)) {
+          window.location = "https://apps.apple.com/in/app/green-spoon-food-delivery-app/id6475314948";
+        } else if (/Android/.test(userAgent)) {
+          window.location = "https://play.google.com/store/apps/details?id=green.spoon.app";
+        } else {
+          window.location = "https://www.spoon.green";
+        }
+      }
+
+      setTimeout(function () {getOS()}, 2000);
+    </script>
+  </body>
+</html>
